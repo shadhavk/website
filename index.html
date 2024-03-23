@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fathima Shadha</title>
+    <title>shadhavk</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
@@ -32,17 +32,17 @@
           <div class="site-nav"> 
             <nav role="navigation">
               <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title">About</span></a>
+                <li class="nav-item d-none d-md-block"><a class="nav-link" href="#about" title="About"><span class="menu-title">About</span></a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title">Skills</span></a>
+                <li class="nav-item d-none d-md-block"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title">Skills</span></a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span class="menu-title">Experience</span></a>
+                <li class="nav-item d-none d-md-block"><a class="nav-link" href="#experience" title="Experience"><span class="menu-title">Experience</span></a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title">Education</span></a>
+                <li class="nav-item d-none d-md-block"><a class="nav-link" href="#education" title="Education"><span class="menu-title">Education</span></a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#projects" title="Projects"><span class="menu-title">Projects</span></a>
+                <li class="nav-item d-none d-md-block"><a class="nav-link" href="#projects" title="Projects"><span class="menu-title">Projects</span></a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><span class="menu-title">Contact</span></a>
+                <li class="nav-item d-none d-md-block"><a class="nav-link" href="#contact" title="Contact"><span class="menu-title">Contact</span></a>
                 </li>
               </ul>
             </nav>
@@ -266,6 +266,20 @@
       </div>
     </div>
   </div>
+
+  <style>
+    /* Styles for small screens (below medium) */
+    @media (max-width: 767.98px) {
+      .project-reverse {
+        flex-direction: column-reverse;
+      }
+      .col-md-6 {
+        margin-top: 1.5rem;
+      }
+    }
+  </style>
+
+
   <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
     <div class="contant-section">
       <h2 class="h2 fw-light text mb-4">Contact</h2>
@@ -276,7 +290,7 @@
             <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i>shadhavk@gmail.com</div>
           </div>
           <div class="mt-5 d-print-none">
-    <form action="forms/contact.php" method="POST" role="form" class="php-email-form">
+    <form method="post" id="gform" action="https://script.google.com/macros/s/AKfycbzLHzdtV9ynQAx2Az0d7Hpe4u1qd3UwUPxqsVWqDyG1-fsGDol34M7mv8A8dEUBjbrZ/exec">
   <div class="form-outline mb-4">
     <input type="text" id="name" class="form-control" required/>
     <label class="form-label" for="name">Name</label>
