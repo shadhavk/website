@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>shadhavk</title>
+    <link rel="icon" src="favicon.ico" type="image/gif" size="16x16">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
@@ -268,13 +270,16 @@
   </div>
 
   <style>
-    /* Styles for small screens (below medium) */
+    
     @media (max-width: 767.98px) {
       .project-reverse {
         flex-direction: column-reverse;
       }
       .col-md-6 {
         margin-top: 1.5rem;
+      }
+      .col-md-6:nth-child(odd) .m-4 {
+        text-align: center;
       }
     }
   </style>
